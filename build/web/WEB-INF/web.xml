@@ -1,50 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                              http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
     <servlet>
         <servlet-name>EmailListServlet</servlet-name>
         <servlet-class>murach.email.EmailListServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>wordDB</servlet-name>
-        <servlet-class>murach.data.wordDB</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>DBUtil</servlet-name>
-        <servlet-class>murach.data.DBUtil</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>MyHttpServer</servlet-name>
-        <servlet-class>murach.business.MyHttpServer</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>Word</servlet-name>
-        <servlet-class>murach.business.Word</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>EmailListServlet</servlet-name>
         <url-pattern>/emailList</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>wordDB</servlet-name>
-        <url-pattern>/wordDB</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>DBUtil</servlet-name>
-        <url-pattern>/DBUtil</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>MyHttpServer</servlet-name>
-        <url-pattern>/MyHttpServer</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>Word</servlet-name>
-        <url-pattern>/Word</url-pattern>
-    </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
-    <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
 </web-app>
